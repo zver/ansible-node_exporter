@@ -51,7 +51,7 @@ None.
 
     - hosts: all
       roles:
-        - role: geerlingguy.node_exporter
+        - role: zver.node_exporter
 
 ## License
 
