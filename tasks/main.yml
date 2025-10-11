@@ -51,6 +51,7 @@
 - name: Reload systemd daemon if unit file is changed.
   systemd:
     daemon_reload: true
+    state: restarted
   when: node_exporter_service is changed
 
 - name: Ensure node_exporter is running and enabled at boot.

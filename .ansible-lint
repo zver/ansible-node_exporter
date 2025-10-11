@@ -1,3 +1,9 @@
 skip_list:
-  - 'yaml'
-  - 'role-name'
+  - fqcn-builtins
+  - fqcn
+  - risky-shell-pipe
+  - yaml[truthy]
+  - name[missing]
+  - yaml[new-line-at-end-of-file]
+  - yaml[line-length]
+  - yaml[commas]
