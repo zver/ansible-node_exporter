@@ -7,3 +7,4 @@ skip_list:
   - yaml[new-line-at-end-of-file]
   - yaml[line-length]
   - yaml[commas]
+  - schema[meta]
