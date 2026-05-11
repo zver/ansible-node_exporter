@@ -1,6 +1,7 @@
 ---
 - name: Determine latest GitHub release (local)
   delegate_to: localhost
+  connection: local
   become: false
   uri:
     url: "https://api.github.com/repos/prometheus/node_exporter/releases/latest"
