@@ -40,6 +40,14 @@
     create_home: false
     state: present
 
+- name: Create node_exporter textfile collector directory
+  file:
+    path: /var/lib/node_exporter/textfile_collector
+    state: directory
+    mode: "0755"
+    owner: node_exporter
+    group: node_exporter
+
 - name: Copy the node_exporter systemd unit file.
   template:
     src: node_exporter.service.j2
